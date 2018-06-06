@@ -17,3 +17,15 @@ def channel_order(number):
         14 : 13,
         15 : 15
     }[number]
+
+def make_pharma(number,head,tail):
+    a = bin(12)
+    a = list(a[2:])
+    np.asarray(a,dtype=int)
+
+    head = np.asarray([1,1,0],dtype=int)
+    tail = np.asarray([0,1,1],dtype=int)
+
+    middle = np.append(head,a)
+    final = np.append(middle,tail)
+    return final
